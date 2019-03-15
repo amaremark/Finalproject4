@@ -1,0 +1,344 @@
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI",Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #1a0dab;
+    background: url('img/Map.jpg')no-repeat;
+
+}
+
+  .main{
+      border: 2px solid red;
+  }
+  
+  
+  .one{
+      border: 1px solid rgb(225, 0, 255);
+      height: 600px;
+      width: 300px;
+      background-color: #1a0dab;
+
+  }
+  .searchForm {
+    border: 2px solid #3b1616;
+    padding: 0 10px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 610px;
+
+  }
+  .container{
+    
+      width:100%;
+      
+    
+      
+  }
+  
+  .searchForm button {
+    border: 1px solid rgb(5, 4, 4);
+    background-color:rgb(14, 13, 13);
+    color: white;
+    
+
+  }
+ 
+  .searchForm-input {  
+    width: 700px;
+    border: none;
+    border-radius: 3px;
+    padding: 14px 20px;
+    font-size: 1.6rem;
+    outline: none;
+    /* background: black;
+    color: white; */
+  }
+  
+  .searchForm-input:focus {
+    outline: none;
+  }
+  
+  .searchForm-searchIcon {
+    width: 120px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .searchForm-inlineSubmit {
+    display: none;
+  }
+  
+  .searchForm-button {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 1.5rem;
+    overflow: hidden;
+    vertical-align: top;
+    cursor: pointer;
+    background: black;
+    /* margin: 3rem 0.8rem; */
+
+    margin-left: 10px;
+    
+  }
+  
+  .searchForm-button::before {
+    
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgb(59, 25, 25);
+    transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -10em, 0); */
+    /* transition: transform 0.3s, opacity 0.3s, background-color 0.3s, -webkit-transform 0.3s;
+  }
+  
+  .searchForm-button:hover::before {
+    opacity: 1;
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  
+  .searchForm-button:hover {
+    color:black ;
+    border-color: #555;
+  }
+  
+  .github-corner {
+      position: absolute;
+      top: 0;
+      right: 0;
+    display: none;
+  }
+  
+  .github-corner__svg {
+      fill: #222;
+      color: #fafafa;
+      position: absolute;
+      top: 0;
+      border: 0;
+      right: 0;
+  }
+  
+  .top-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    /* transform: translate(0, 0); */
+    border-bottom: 1px solid #eee;
+    background-color: #FAFAFA;
+    padding: 5px 0;
+  }
+  
+  .top-container .wikipedia-logo {
+    width: 60px;
+    height: 60px;
+    margin: 0 20px;
+  }
+  
+  .top-container .searchForm {
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-container .searchForm-input {
+    padding: 10px;
+  }
+  
+  .top-container .searchForm-inlineSubmit {
+  display: inline;
+  }
+  
+  .top-container .searchForm-button {
+    display: none;
+  }
+/*   
+  .top-container .github-corner {
+    display: block;
+  } */
+  
+  .resultsContainer {
+    width: 100%;
+    max-width: 630px;
+    margin-left: 100px;
+    padding: 30px 20px;
+  }
+  
+  .resultItem {
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+    line-height: 20px;
+  }
+  
+  .resultItem-title {
+    color: #1a0dab;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .resultItem-title a {
+    text-decoration: none;
+  }
+  
+  .resultItem-title a:hover {
+    text-decoration: underline;
+  }
+  
+  .resultItem-link {
+    color: #006621;
+  }
+  
+  .resultItem-snippet {
+    color: #545454;
+    line-height: 18px;
+  }
+  
+  .resultItem-snippet .searchmatch {
+    font-weight: 700;
+  }
+  
+  .errorMessage {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+  
+  .errorMessage .keyword {
+    font-weight: 700;
+  }
+  
+  .moreResults {
+    margin-left: 100px;
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 630px;
+    padding-left: 20px;
+  }
+  
+  .moreResults p {
+    font-size: 1.8rem;
+  }
+  
+  .moreResults-button {
+    width: 100%;
+    border: 1px solid #c3c3c3;
+    background-color: #eee;
+    color: #555;
+    font-weight: 600;
+    padding: 15px 0;
+    font-size: 1.6rem;
+    border-radius: 4px;
+  }
+  
+  .moreResults-button:hover {
+    background-color: #ccc;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .loading-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.666;
+    background-color: #fff;
+    z-index: 2;
+  }
+  
+  @media screen and (max-width: 550px) {
+  
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .top-container {
+      width: 100%;
+      
+    }
+  
+    .top-container .github-corner {
+      display: none;
+    }
+  
+    .resultsContainer, .moreResults {
+      max-width: 100%;
+      word-wrap: break-word;
+      margin-left: 0;
+    }
+  
+    .moreResults {
+      width: 90%;
+    }
+  
+    .searchForm-input {
+      width: 100%;
+      max-width: 150px;
+    }
+}
+.foot {
+    width: 100%;
+    height: 150px;
+    background:#6696C6;
+    
+    margin-top: 200px;
+}
+h1{
+    background: #6696C6;
+    width: 100%;
+    height: 100px;
+    position:relative;
+    
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .fa:hover {
+    opacity: 1;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  
+  img {
+      padding-bottom:10px;
+      opacity: 0.5;
+      
+  }
